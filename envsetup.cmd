@@ -12,9 +12,9 @@
 @echo --------------------------------------
 @set SRC_ROOT=%~dp0
 
-@set CYGPATH=D:\tools\cygwin\bin\cygpath.exe
-@set TOOLCHAIN_ROOT_PATH=/cygdrive/D/tools/ARMCT5.01/94
-@set path=D:\tools\cygwin\bin;D:\tools\ARMCT5.01\94\bin;%SRC_ROOT%tools;%path%
+@set CYGPATH=c:\tools\cygwin\bin\cygpath.exe
+@set TOOLCHAIN_ROOT_PATH=/cygdrive/c/tools/ARMCT5.01/94
+@set path=c:\tools\cygwin\bin;c:\tools\ARMCT5.01\94\bin;%SRC_ROOT%tools;%path%
 
 :: Enter the application name here
 @echo --------------------------------------
