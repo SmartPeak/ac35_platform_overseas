@@ -97,8 +97,8 @@ include (${PROJECT_SOURCE_DIR}/etc/model.cmake)
 include (${PROJECT_SOURCE_DIR}/etc/sdk.cmake)
 
 # …Ë÷√applibø‚À—À˜¬∑æ∂
-#include (${PROJECT_SOURCE_DIR}/etc/applib.cmake)
-include (${PROJECT_SOURCE_DIR}/etc/applib_src.cmake)
+include (${PROJECT_SOURCE_DIR}/etc/applib.cmake)
+
 
 # …Ë÷√EMVø‚À—À˜¬∑æ∂
 IF (DEFINED EMV_VER)
