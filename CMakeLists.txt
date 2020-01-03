@@ -84,6 +84,8 @@ IF (${CMAKE_QR_BUILD_TYPE} STREQUAL "Release")
 	STRING(APPEND CMAKE_C_FLAGS " -DLOG_DISABLE ")
 ENDIF()
 
+STRING(APPEND CMAKE_C_FLAGS " -DPLATFORM_UTF8 ")
+
 #====================================================================
 # 设置路径
 include (${PROJECT_SOURCE_DIR}/etc/path.cmake)
@@ -95,7 +97,8 @@ include (${PROJECT_SOURCE_DIR}/etc/model.cmake)
 include (${PROJECT_SOURCE_DIR}/etc/sdk.cmake)
 
 # 设置applib库搜索路径
-include (${PROJECT_SOURCE_DIR}/etc/applib.cmake)
+#include (${PROJECT_SOURCE_DIR}/etc/applib.cmake)
+include (${PROJECT_SOURCE_DIR}/etc/applib_src.cmake)
 
 # 设置EMV库搜索路径
 IF (DEFINED EMV_VER)
